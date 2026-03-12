@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="龙虾王国 - 实时可视化 Discord 频道活跃度，每只龙虾代表一个频道">
+  <meta name="theme-color" content="#0a1628">
+  <meta property="og:title" content="🦞 龙虾王国">
+  <meta property="og:description" content="实时可视化 Discord 频道活跃度">
+  <title>🦞 龙虾王国 - Lobster Kingdom</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦞</text></svg>">
+  <link rel="stylesheet" href="css/style.css?v=46">
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <div id="loading" class="loading-screen">
+    <div class="loading-content">
+      <div class="loading-emoji">🦞</div>
+      <div class="loading-text">龙虾王国加载中…</div>
+    </div>
+  </div>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="🔍 搜索龙虾…" autocomplete="off">
+    <div id="search-results" class="hidden"></div>
+  </div>
+  <div class="controls">
+    <button id="fullscreen-btn" class="control-btn" title="全屏 (F)">⛶</button>
+    <button id="fps-toggle" class="control-btn" title="FPS计数器 (D)">📊</button>
+  </div>
+  <div id="fps-counter" class="hidden"></div>
+  <div class="version-badge">v46</div>
+  <div id="tooltip" class="hidden"></div>
+  <div id="detail-card" class="hidden">
+    <div class="card-inner">
+      <button class="card-close">&times;</button>
+      <canvas id="card-lobster" width="200" height="200"></canvas>
+      <h3 id="card-name"></h3>
+      <div id="card-info"></div>
+    </div>
+  </div>
+  <script src="js/api.js?v=46"></script>
+  <script src="js/lobster.js?v=46"></script>
+  <script src="js/renderer.js?v=46"></script>
+  <script src="js/ui.js?v=46"></script>
+  <script src="js/activity-log.js?v=46"></script>
+  <script src="js/leaderboard.js?v=46"></script>
+  <script src="js/interactions.js?v=46"></script>
+  <script src="js/game.js?v=46"></script>
+</body>
+</html>
