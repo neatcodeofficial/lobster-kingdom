@@ -44,7 +44,7 @@ Discord 频道活跃度实时可视化游戏。每只龙虾代表一个频道，
 ### 安装
 
 ```bash
-git clone https://github.com/yourusername/lobster-kingdom.git
+git clone https://github.com/abczsl520/lobster-kingdom.git
 cd lobster-kingdom
 npm install
 ```
